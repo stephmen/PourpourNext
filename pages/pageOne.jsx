@@ -1,8 +1,8 @@
 import React from "react";
-import Menu from "../components/Menu"
-//import { Burger, Menu } from '../components';
+ //import Menu from "../components/Menu"
+import { Burger, Menu } from '../components';
 
-const firstPage = (props) => {
+const pageOne = (props) => {
    
     return(
     <div>
@@ -10,7 +10,7 @@ const firstPage = (props) => {
         <div className="home">
             <img src="Vector.png" alt="home"/>
         </div>
-        <div className="nav">
+        <div>
             
             <Menu />
         </div>
@@ -37,4 +37,4 @@ const firstPage = (props) => {
     
 }
 
-export default firstPage
+export default pageOne
