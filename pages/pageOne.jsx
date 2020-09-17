@@ -1,40 +1,37 @@
-import React from "react";
- //import Menu from "../components/Menu"
-import { Burger, Menu } from '../components';
+import React, { useState, useRef } from "react";
+//import Footer from '../components/Footer'
+import { ThemeProvider } from 'styled-components';
+import { theme } from '.././styles/theme';
+import { Burger, Menu, Footer } from '../components';
 
-const pageOne = (props) => {
+const PageOne = (props) => {
    
+  const [open, setOpen] = useState(false);
+  const node = useRef();
+  const menuId = "main-menu";
+
+
     return(
+    
     <div>
-    <header className="header1">
-        <div className="home">
-            <img src="Vector.png" alt="home"/>
-        </div>
-        <div>
-            
-            <Menu />
-        </div>
+     <header className="header">
     </header>
+     <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
+     <Menu open={open} setOpen={setOpen} id={menuId} />
+     
+     
+        
+     
      <main>
         <img className="logo" src="Pourpour_Logo.png" /> 
 
     </main>
     <img className="photo" src="PlacedesArtsPP1.jpg" />
-    <footer className="footer">
-        <div className="Left"></div>
-        <div className="bottomIcon">
-            <img src="Courrier.png" alt=""/>
-            <text>"               "</text>
-            <img src="facebook.png" alt=""/>
-            <text>"               "</text>
-            <img src="Youtube.png" alt=""/>
-            <text>"               "</text>
-            <img src="twitter.png" alt=""/>
-        </div>
-    </footer>
+    <Footer />
     </div>
+    
     )
     
 }
 
-export default pageOne
+export default PageOne
