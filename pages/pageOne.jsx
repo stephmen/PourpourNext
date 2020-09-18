@@ -17,7 +17,6 @@ const PageOne = (props) => {
     
     <div >
     <Header />
-    <HomeLogo />
     <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
     <Menu open={open} setOpen={setOpen} id={menuId} />
     
