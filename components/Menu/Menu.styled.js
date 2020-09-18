@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const StyledMenu = styled.nav`
-  transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(+100%)'}; 
-  /* transform: translateX(-100%); */
+  transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'}; 
+  /* z-index: 10; */
   display: flex;
   flex-direction: column;
   justify-content: top;
@@ -10,7 +10,7 @@ export const StyledMenu = styled.nav`
   height: 100vh;
   text-align: left;
   padding: 2rem;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   transition: transform 0.3s ease-in-out;
@@ -22,7 +22,7 @@ export const StyledMenu = styled.nav`
   a {
     font-size: 2rem;
     text-transform: uppercase;
-    padding: 1rem 0;
+    padding: 1rem ;
     font-weight: bold;
     letter-spacing: 0.5rem;
     color: ${({ theme }) => theme.primaryDark};

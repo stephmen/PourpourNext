@@ -8,15 +8,12 @@ export const StyledFooter = styled.footer`
   width: 100%;
   height: 3rem;
   display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  padding-right: 20px;
-
-
-.bottomIcon{
-  padding-left: px;
-  justify-content: stretch;
+  justify-content: flex-end; 
+  white-space: 30px;
   align-items: center;
-  justify-content: center;
-}
+
+  img {
+      padding: 30px;
+  }
+
 `
