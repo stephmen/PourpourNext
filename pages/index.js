@@ -9,18 +9,7 @@ export default function Home() {
         <title>Fanfare PourPour</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <PageOne />
-
-     
-
-     
-
-        
-
-        
-   
-
-      
+      <PageOne />      
     </div>
   )
 }

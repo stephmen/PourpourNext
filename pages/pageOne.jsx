@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 //import Footer from '../components/Footer'
 import { ThemeProvider } from 'styled-components';
 import { theme } from '.././styles/theme';
-import { Burger, Menu, Footer, Header, HomeLogo } from '../components';
+import { Burger, Menu, Footer, Header, HomeLogo, PourPourLogo } from '../components';
 import { useOnClickOutside } from '../hooks';
 
 const PageOne = (props) => {
@@ -14,24 +14,10 @@ const PageOne = (props) => {
   useOnClickOutside(node, () => setOpen(false));
 
     return(
-    
     <div >
-    <Header />
-    <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
-    <Menu open={open} setOpen={setOpen} id={menuId} />
-    
-     
-     
-        
-     
-     <main>
-        <img className="logo" src="Pourpour_Logo.png" /> 
-
-    </main>
+    <PourPourLogo />
     <img className="photo" src="PlacedesArtsPP1.jpg" />
-    <Footer />
     </div>
-    
     )
     
 }

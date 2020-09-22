@@ -12,13 +12,7 @@ export const GlobalStyles = createGlobalStyle`
     background-color: #b3cad6;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
-  header{
  
-}
-
-main{
-  background-color: "#b3cad6"
-}
 .logo{
 padding-top: 3.5rem;
 padding-left: 3rem;

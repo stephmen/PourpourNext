@@ -2,27 +2,32 @@
 import React from 'react';
 import { bool } from 'prop-types';
 import { StyledMenu } from './Menu.styled';
+import Link from 'next/link'
+
 const Menu = ({ open }) => {
   return (
     <StyledMenu open={open}>
       <a href="/">
-        Spectacles
-      </a>
-      <a href="/">
         Disques
         </a>
-      <a href="/">
-        Affiches
-        </a>
+        <Link href="/photos">
       <a href="/">
         Photos
         </a>
+        </Link>
+      <Link href="/historique">
       <a href="/">
         Histoire
-        </a>
+      </a>
+      </Link>
+      <Link href="/presse">
       <a href="/">
         Presse
         </a>
+      </Link>
+      <a href="/">
+        Spectacles
+      </a>
     </StyledMenu>
   )
 }
