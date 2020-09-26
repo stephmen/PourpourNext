@@ -5,6 +5,11 @@ export const StyledPress = styled.div`
 .container{
     margin: 8rem 8rem;
 }
+.commentaire{
+    padding-top: 4rem;
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+}
 .c0 {
   color: #3d3e3d;
   font-weight: 400;
