@@ -1,18 +1,15 @@
-import PageOne from './pageOne'
-import Head from 'next/head'
+import React from 'react'
+import Disques from "../components/Disques"
 
 
 
 
 
-export default function Home() {
+export default function disques() {
   return (
-    <div >
-      <Head>
-        <title>Fanfare PourPour</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-            
+    <div>
+        <Disques />
     </div>
+
   )
 }

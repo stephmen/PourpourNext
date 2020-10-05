@@ -3,10 +3,11 @@ import styled from  'styled-components'
 export const StyledPress = styled.div`
 
 .container{
-    margin: 8rem 8rem;
+    margin: 8rem 28rem;
 }
 .commentaire{
-    padding-top: 4rem;
+    /* padding-top: 2rem; */
+    /* padding-bottom: 2rem; */
     display:grid;
     grid-template-columns: 1fr 4fr;
 }
@@ -19,6 +20,15 @@ export const StyledPress = styled.div`
   font-family: "Verdana";
   font-style: italic;
 }
+.c1 {
+  margin: 30px 60px;
+  padding-top: 10pt;
+  padding-bottom: 0pt;
+  line-height: 1.15;
+  orphans: 2;
+  widows: 2;
+  text-align: left;
+}
 .c2 {
   color: #3d3e3d;
   font-weight: 400;
@@ -27,6 +37,8 @@ export const StyledPress = styled.div`
   font-size: 10pt;
   font-family: "Verdana";
   font-style: normal;
+  padding-top: 10rem;
+  
 }
 .c3 {
   color: #000000;
@@ -47,22 +59,16 @@ export const StyledPress = styled.div`
   font-style: normal;
 }
 .sous-titre {
-  color: #ff0000;
-  font-weight: 700;
+  padding-bottom: 20pt;
+  color: #000000;
+  font-weight: 900;
   text-decoration: none;
   vertical-align: baseline;
   font-size: 18pt;
   font-family: "Verdana";
   font-style: normal;
 }
-.c1 {
-  padding-top: 0pt;
-  padding-bottom: 0pt;
-  line-height: 1.15;
-  orphans: 2;
-  widows: 2;
-  text-align: left;
-}
+
 .c7 {
   background-color: #ffffff;
   max-width: 468pt;

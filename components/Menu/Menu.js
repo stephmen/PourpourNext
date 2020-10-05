@@ -4,28 +4,30 @@ import { bool } from 'prop-types';
 import { StyledMenu } from './Menu.styled';
 import Link from 'next/link'
 
-const Menu = ({ open }) => {
+const Menu = ({ open, setOpen }) => {
   return (
     <StyledMenu open={open}>
-      <a href="/">
+      <Link href="/disques">
+      <a href="/" onClick={() => setOpen(!open)}>
         Disques
         </a>
+      </Link>
         <Link href="/photos">
-      <a href="/">
+      <a href="/" onClick={() => setOpen(!open)}>
         Photos
         </a>
         </Link>
       <Link href="/historique">
-      <a href="/">
+      <a href="/" onClick={() => setOpen(!open)}>
         Histoire
       </a>
       </Link>
       <Link href="/presse">
-      <a href="/">
+      <a href="/" onClick={() => setOpen(!open)}>
         Presse
         </a>
       </Link>
-      <a href="/">
+      <a href="/" onClick={() => setOpen(!open)}>
         Spectacles
       </a>
     </StyledMenu>

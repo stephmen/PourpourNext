@@ -6,4 +6,6 @@ export { default as Header } from './Header';
 export { default as HomeLogo } from './HomeLogo';
 export { default as PourPourLogo } from './PourPourLogo';
 export { default as Press } from './Press';
+export { default as Disques } from './Disques';
+export { default as History } from './History';
 

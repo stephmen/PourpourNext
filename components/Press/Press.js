@@ -2,10 +2,17 @@ import React from "react";
 import styled from "styled-components";
 import { StyledPress } from "./Press.styled";
 
+const Disque = styled.div`
+background-color: #e6e3d1;
+width: 100%;
+`
+
 export default function Presse() {
   return (
     <StyledPress>
       <div className="container">
+        <Disque>
+
         <p class="c1">
           <span class="sous-titre">EXTRAITS DE PRESSE</span>
         </p>
@@ -28,7 +35,7 @@ export default function Presse() {
               J''ai donc appris un peu de trombone pour être plus près d'elle.
               J'ai eu un enfant d&#39;elle.
               <br />
-              Aujourd&rsquo;hui, &nbsp;l&rsquo;orchestre joue merveilleusement
+              Aujourd'hui, &nbsp;l'orchestre joue merveilleusement
               bien.
               <br />
               Viva Pourpour !
@@ -56,12 +63,11 @@ export default function Presse() {
             <br />
             <br />
 
-            <span class="c3">
+            
               Patrick Duval, directeur de Musiques de Nuit,
-            </span>
-            <p class="c1">
-              <span class="c3">Bordeaux, France (2008)</span>
-            </p>
+            
+              Bordeaux, France (2008)
+            
           </p>
         </div>
 
@@ -79,72 +85,74 @@ export default function Presse() {
             Georges Harrison, avril 2000
           </p>
         </div>
+        </Disque>
+        <Disque></Disque>
 
         <p class="c1">
           <span class="c2">&nbsp; </span>
         </p>
-
+        <Disque>
         <p class="c1">
           <span class="sous-titre">Extraits de presse... La Pourpour</span>
         </p>
         <p class="c1">
           <span class="c0">
-            &laquo; La Pop du dernier siècle au grand complet (&hellip;), le
-            nouvel album de la fanfare Pourpour : un disque forain m élodique,
-            lyrique, joyeux, dense, cin ématographique, rempli de contrastes,
-            avec ses moments loufoques, th é&acirc;traux et m&ecirc;me doucement
-            free &raquo;
+            « La Pop du dernier siècle au grand complet (&hellip;), le
+            nouvel album de la fanfare Pourpour : un disque forain mélodique,
+            lyrique, joyeux, dense, cinématographique, rempli de contrastes,
+            avec ses moments loufoques, théâtraux et même doucement
+            free »
           </span>
         </p>
         <p class="c1">
-          <span class="c2">
+          
             &mdash; Yves Bernard, Le Devoir, 22 septembre 2015
-          </span>
+         
         </p>
         <p class="c1">
           <span class="c0">
-            &laquo;Voici un projet comme nous les aimons. Avec ses 20 bougies
-            &agrave; la cl é, la fanfare Pourpour, v éritable institution
+            «Voici un projet comme nous les aimons. Avec ses 20 bougies
+            à la clé, la fanfare Pourpour, véritable institution
             communautaire et joyeuse propage encore la bonne parole, pour les
-            petits et les grands. Dans un esprit tout &agrave; fait
-            Nouvelle-Orl éans ou banda, ces ensembles que nous voyons fleurir
-            dans le sud de la France lors des f&ecirc;tes de village, les 22
-            musiciens et musiciennes ont toujours le feu sacr é.&laquo;
+            petits et les grands. Dans un esprit tout à fait
+            Nouvelle-Orléans ou banda, ces ensembles que nous voyons fleurir
+            dans le sud de la France lors des fêtes de village, les 22
+            musiciens et musiciennes ont toujours le feu sacré.
           </span>
         </p>
         <p class="c1">
-          <span class="c2">
-            &mdash; Christophe Rodriguez, Journal de Montr éal, Qu ébec, 2015
-          </span>
+          
+            &mdash; Christophe Rodriguez, Journal de Montréal, Québec, 2015
+          
         </p>
         <p class="c1">
           <span class="c0">
-            &laquo;La Pourpour s&rsquo;inscrira comme une &oelig;uvre majeure
-            parmi les r éalisations de la Fanfare Pourpour. Un disque multiple
-            o&ugrave; la po ésie s&rsquo; éclate dans des orchestrations
-            inventives et des paroles en toute libert é. Une  écoute qui fait du
+            «La Pourpour s'inscrira comme une &oelig;uvre majeure
+            parmi les réalisations de la Fanfare Pourpour. Un disque multiple
+            o&ugrave; la poésie s' éclate dans des orchestrations
+            inventives et des paroles en toute liberté. Une  écoute qui fait du
             bien en ces temps o&ugrave; tant de musiques restent dans
-            l&rsquo;ombre&hellip; dans l&rsquo;ombre des moules impos és.&laquo;
+            l'ombre&hellip; dans l'ombre des moules imposés.«
           </span>
         </p>
         <p class="c1">
-          <span class="c2">
-            &mdash; Fran&ccedil;ois Martel, Vinyle en mille morceaux, Radio CIBL
-            101,5 FM, Qu ébec, 2015
-          </span>
+          
+            &mdash; François Martel, Vinyle en mille morceaux, Radio CIBL
+            101,5 FM, Québec, 2015
+          
         </p>
         <p class="c1">
           <span class="c0">
-            &laquo; Le 5e disque de la fanfare Pourpour, une vrai f&ecirc;te
+            « Le 5e disque de la fanfare Pourpour, une vrai fête
             avec 19 musiciens (&hellip;)Un big band exceptionnel en  évolution
-            constante.&raquo;
+            constante.»
           </span>
         </p>
         <p class="c1">
-          <span class="c2">
-            &mdash; Francine Grimaldi, Samedi et Rien d&rsquo;Autres, Ici Radio
-            Canada Première, Montr éal 2015
-          </span>
+          
+            &mdash; Francine Grimaldi, Samedi et Rien d'Autres, Ici Radio
+            Canada Première, Montréal 2015
+          
         </p>
         <p class="c1">
           <span class="sous-titre">
@@ -153,60 +161,57 @@ export default function Presse() {
         </p>
         <p class="c1">
           <span class="c0">
-            &laquo;Sound quality is superb. Time to take out whatever moves you
-            and boogie along with Fanfare Pourpour&rsquo;s freewheeling musical
-            spirit.&laquo;
+            «Sound quality is superb. Time to take out whatever moves you
+            and boogie along with Fanfare Pourpour's freewheeling musical
+            spirit.«
           </span>
         </p>
         <p class="c1">
-          <span class="c2">
+          
             &mdash; Tiina Kii, The WholeNote (Canada), 2011
-          </span>
+          
         </p>
         <p class="c1">
           <span class="c0">
-            &laquo;Fanfare Pourpour [&hellip;] celebrates their love for
-            accessible dance tunes coming from a diversity of traditions.&raquo;
+            «Fanfare Pourpour [&hellip;] celebrates their love for
+            accessible dance tunes coming from a diversity of traditions.»
           </span>
         </p>
         <p class="c1">
-          <span class="c2">
+          
             &mdash; Dolf Mulder, Vital #746 (Pays-Bas), 2010
-          </span>
+          
         </p>
         <p class="c1">
           <span class="c0">
-            &laquo;As each new number queues up, a different kind of smile
-            crosses your face.&raquo;
+            «As each new number queues up, a different kind of smile
+            crosses your face.»
           </span>
         </p>
         <p class="c1">
-          <span class="c2">&mdash; Stephen Fruitman, Sonomu (RU), 2010</span>
+          &mdash; Stephen Fruitman, Sonomu (RU), 2010
         </p>
         <p class="c1">
           <span class="c0">
-            &laquo; [&hellip;] La Pourpour, c&rsquo;est &ccedil;a, rien &agrave;
-            moiti é. De la musique de bonne humeur, [&hellip;] de la joie de
-            vivre &agrave;  écouter en plein air ou dans un film italien.
+            « [&hellip;] La Pourpour, c'est ça, rien à
+            moitié. De la musique de bonne humeur, [&hellip;] de la joie de
+            vivre à  écouter en plein air ou dans un film italien.
             [&hellip;] La relève Pourpour porte une casquette pour se donner un
             genre, la vieille garde pour cacher sa calvitie
           </span>
         </p>
         <p class="c1">
-          <span class="c2">
-            &mdash; Jos ée Blanchette, Le Devoir, Qu ébec, 2010
-          </span>
+          
+            &mdash; Josée Blanchette, Le Devoir, Québec, 2010
         </p>
         <p class="c1">
           <span class="c0">
-            &laquo; [&hellip;] La fanfare Pourpour n&rsquo;a rien perdu de sa
-            fra&icirc;cheur et de sa spontan éit é &raquo;
+            « [&hellip;] La fanfare Pourpour n'a rien perdu de sa
+            fra&icirc;cheur et de sa spontanéité »
           </span>
         </p>
         <p class="c1">
-          <span class="c2">
-            &mdash; Emilie Russo, le Plateau, Qu ébec, 2010
-          </span>
+            &mdash; Emilie Russo, le Plateau, Québec, 2010
         </p>
         <p class="c1">
           <span class="sous-titre">
@@ -215,127 +220,111 @@ export default function Presse() {
         </p>
         <p class="c1">
           <span class="c0">
-            &laquo; Toujours est-il que les fondateurs de cette phalange ont
-            malax é les folklores du monde avec les rythmes du globe pour
-            accoucher de cette musique aussi fra&icirc;che qu&rsquo;heureuse.
-            &raquo;
+            « Toujours est-il que les fondateurs de cette phalange ont
+            malaxé les folklores du monde avec les rythmes du globe pour
+            accoucher de cette musique aussi fra&icirc;che qu'heureuse.
+            »
           </span>
         </p>
         <p class="c1">
-          <span class="c2">
-            &mdash; Serge Truffaut, Le Devoir, Qu ébec, 2008
-          </span>
-        </p>
-        <p class="c1">
-          <span class="c0">
-            &laquo;[&hellip;] La fanfare Pourpour a pu donner sa pleine mesure
-            dans un concert avec l&#39;accord éoniste Lars Hollmer; dix-neuf
-            musiciens interpr étant &agrave; fond les ballons des airs
-            d&#39;Europe de l&#39;Est, des m élodies de bal populaire, merengue,
-            valses et polkas! Le tout livr é dans une enveloppe sonore
-            somptueuse, scell ée par un Bernard Grenon des grands soirs. Bref,
-            o&ugrave; est ce disque?&raquo;
-          </span>
-        </p>
-        <p class="c1">
-          <span class="c2">
-            &mdash; R égean Beaucage, ImproJazz, France, 2005
-          </span>
+            &mdash; Serge Truffaut, Le Devoir, Québec, 2008
         </p>
         <p class="c1">
           <span class="c0">
-            &laquo;[&hellip;]It was a wonderful match. Both Lars and the 19
+            «[&hellip;] La fanfare Pourpour a pu donner sa pleine mesure
+            dans un concert avec l&#39;accordéoniste Lars Hollmer; dix-neuf
+            musiciens interprétant à fond les ballons des airs
+            d&#39;Europe de l&#39;Est, des mélodies de bal populaire, merengue,
+            valses et polkas! Le tout livré dans une enveloppe sonore
+            somptueuse, scellée par un Bernard Grenon des grands soirs. Bref,
+            o&ugrave; est ce disque?»
+          </span>
+        </p>
+        <p class="c1">
+            &mdash; Régean Beaucage, ImproJazz, France, 2005
+        </p>
+        <p class="c1">
+          <span class="c0">
+            «[&hellip;]It was a wonderful match. Both Lars and the 19
             piece ensemble both embrace a fun-filled and festive vibe. Lars
             provided tunes based on Scandinavian folk themes that were always
             touching and made everyone smile.[&hellip;] It was cartoon music for
             children of all ages, quite delightful and refreshing from the more
-            serious side of things. [&hellip;]&raquo;
+            serious side of things. [&hellip;]»
           </span>
         </p>
         <p class="c1">
-          <span class="c2">
             &mdash; Bruce Gallanter, Downtown Music Gallery,  états-Unis, 2005
-          </span>
         </p>
         <p class="c1">
           <span class="sous-titre">Extraits de presse... Le Bal</span>
         </p>
         <p class="c1">
           <span class="c0">
-            &laquo;[&hellip;] un orchestre souvent redoutable, qui, s&rsquo;il
-            garde la nostalgie des valses d&rsquo;antan, s&rsquo;est ouvert
-            &agrave; des sonorit és et textures très
-             éloign ées[&hellip;]&raquo;
+            «[&hellip;] un orchestre souvent redoutable, qui, s'il
+            garde la nostalgie des valses d'antan, s'est ouvert
+            à des sonorités et textures très
+             éloignées[&hellip;]»
           </span>
         </p>
         <p class="c1">
-          <span class="c2">&mdash; Luc Bouquet, ImproJazz, France, 2005</span>
+          &mdash; Luc Bouquet, ImproJazz, France, 2005
         </p>
         <p class="c1">
           <span class="c0">
-            &laquo;[&hellip;]un monde ou le bonheur marche d&rsquo;un pas l éger
-            au rythme de la valse, avec un air vaguement nostalgique.&raquo;
+            «[&hellip;]un monde ou le bonheur marche d'un pas léger
+            au rythme de la valse, avec un air vaguement nostalgique.»
           </span>
         </p>
         <p class="c1">
-          <span class="c2">
-            &mdash; R éjean Beaucage, La Scena Musicale, Qu ébec, 2004
-          </span>
-        </p>
-        <p class="c1">
-          <span class="c0">
-            &laquo;Ce cocktail musical &agrave; la fois savant et sans
-            pr étention donne envie de descendre danser dans la
-            rue[&hellip;]&raquo;
-          </span>
-        </p>
-        <p class="c1">
-          <span class="c2">
-            &mdash; Fr éd érique Doyon, Le Devoir, Qu ébec, 2004
-          </span>
+            &mdash; Réjean Beaucage, La Scena Musicale, Québec, 2004
         </p>
         <p class="c1">
           <span class="c0">
-            &laquo;Sans pr étention, pourtant, ce corpus impressionne,
-            s&rsquo;avère nettement au-dessus de la moyenne des
-            fanfares[&hellip;]&raquo;
+            «Ce cocktail musical à la fois savant et sans
+            prétention donne envie de descendre danser dans la
+            rue[&hellip;]»
           </span>
         </p>
         <p class="c1">
-          <span class="c2">&mdash; Alain Brunet, La Presse, Qu ébec, 2004</span>
-        </p>
-        <p class="c1">
-          <span class="c0">
-            &laquo;it&#39;s imbued with the indomitable spirit of the 1945
-            resistance film Les enfants du paradis.&raquo;
-          </span>
-        </p>
-        <p class="c1">
-          <span class="c2">
-            &mdash; Juan Rodriguez, The Gazette, Qu ébec, 2004
-          </span>
+            &mdash; Frédérique Doyon, Le Devoir, Québec, 2004
         </p>
         <p class="c1">
           <span class="c0">
-            &laquo;Un amalgame chavirant et rafra&icirc;chissant qui jouit
-            d&rsquo;un engouement renouvel é en ce 21e siècle.&raquo;
+            «Sans prétention, pourtant, ce corpus impressionne,
+            s'avère nettement au-dessus de la moyenne des
+            fanfares[&hellip;]»
           </span>
         </p>
         <p class="c1">
-          <span class="c2">
-            &mdash; Olivier Robillard Laveaux, Voir, Qu ébec, 2004
-          </span>
+          &mdash; Alain Brunet, La Presse, Québec, 2004
         </p>
         <p class="c1">
           <span class="c0">
-            &laquo;[&hellip;] la Fanfare est le meilleur remède contre la
-            morosit é et les jours de cafard[&hellip;]&raquo;
+            «it&#39;s imbued with the indomitable spirit of the 1945
+            resistance film Les enfants du paradis.»
           </span>
         </p>
         <p class="c1">
-          <span class="c2">
-            &mdash; Patrick Baillargeon, Ici Montr éal, Qu ébec, 2004
+            &mdash; Juan Rodriguez, The Gazette, Québec, 2004
+        </p>
+        <p class="c1">
+          <span class="c0">
+            «Un amalgame chavirant et rafra&icirc;chissant qui jouit
+            d'un engouement renouvelé en ce 21e siècle.»
           </span>
+        </p>
+        <p class="c1">
+            &mdash; Olivier Robillard Laveaux, Voir, Québec, 2004
+        </p>
+        <p class="c1">
+          <span class="c0">
+            «[&hellip;] la Fanfare est le meilleur remède contre la
+            morosité et les jours de cafard[&hellip;]»
+          </span>
+        </p>
+        <p class="c1">
+            &mdash; Patrick Baillargeon, Ici Montréal, Québec, 2004
         </p>
         <p class="c1">
           <span class="sous-titre">
@@ -344,67 +333,65 @@ export default function Presse() {
         </p>
         <p class="c1">
           <span class="c0">
-            &laquo;[&hellip;] tout l&agrave;-dessus exalte
-            l&rsquo; émerveillement, la beaut é, la libert é mais sans nier la
-            tristesse et la cruaut é. Pour tout dire, la fanfare Pourpour joue
-            pour tout le monde. M&ecirc;me moi. Foi d&rsquo;ancien exclu de la
-            parade. &raquo;
+            «[&hellip;] tout là-dessus exalte
+            l' émerveillement, la beauté, la liberté mais sans nier la
+            tristesse et la cruauté. Pour tout dire, la fanfare Pourpour joue
+            pour tout le monde. Même moi. Foi d'ancien exclu de la
+            parade. »
           </span>
         </p>
         <p class="c1">
-          <span class="c2">&mdash; Sylvain Cormier, Le Devoir, 1999</span>
+          &mdash; Sylvain Cormier, Le Devoir, 1999
         </p>
         <p class="c1">
           <span class="c0">
-            &laquo;[&hellip;] Guitares acoustiques, accord éons, violon,
-            cuivres, hanches, cris d&rsquo;all égresse et gracieuses
-            stepettes.[&hellip;]La fanfare Pourpour propose un m étissage
-            travers é par les musiques du monde.&raquo;
+            «[&hellip;] Guitares acoustiques, accordéons, violon,
+            cuivres, hanches, cris d'allégresse et gracieuses
+            stepettes.[&hellip;]La fanfare Pourpour propose un métissage
+            traversé par les musiques du monde.»
           </span>
         </p>
         <p class="c1">
-          <span class="c2">&mdash; Alain Brunet, La Presse 1999</span>
+          &mdash; Alain Brunet, La Presse 1999
         </p>
         <p class="c1">
           <span class="c0">
-            &laquo;Des  échos de Nino Rota et de Kurt Weill. Un m élange de
-            vents d&rsquo;Est, parfum és de klezmer, de f&ecirc;te foraine,
-            d&rsquo;atmosphère &agrave; la Radio days de Woody Allen, de
-            Nouvelle-Orleans et de musique de &laquo; char qu&rsquo;on pousse au
-            boutte&raquo; en traversant le rang de gravelle d&rsquo;une verte
-            campagne.[&hellip;] Essayez d&rsquo;imaginer. Un roulement de caisse
-            claire et c&rsquo;est parti.&raquo;
+            «Des  échos de Nino Rota et de Kurt Weill. Un mélange de
+            vents d'Est, parfumés de klezmer, de fête foraine,
+            d'atmosphère à la Radio days de Woody Allen, de
+            Nouvelle-Orleans et de musique de « char qu'on pousse au
+            boutte» en traversant le rang de gravelle d'une verte
+            campagne.[&hellip;] Essayez d'imaginer. Un roulement de caisse
+            claire et c'est parti.»
           </span>
         </p>
         <p class="c1">
-          <span class="c2">&mdash; Pierre Boulet, Le Soleil,1999</span>
+          &mdash; Pierre Boulet, Le Soleil,1999
         </p>
         <p class="c1">
           <span class="c0">
-            &ldquo; It&rsquo;s funny that in an area where so many revel in the
+            &ldquo; It's funny that in an area where so many revel in the
             self-inflicted &ldquo;underground&rdquo; label, the real thing
-            isn&rsquo;t at all what you&rsquo;d expect. It&rsquo;s much
+            isn't at all what you'd expect. It's much
             better.&rdquo;
           </span>
         </p>
         <p class="c1">
-          <span class="c2">&mdash; Charlie McKenzie, The Hour, 1999</span>
+          &mdash; Charlie McKenzie, The Hour, 1999
         </p>
         <p class="c1">
           <span class="c0">
-            &laquo; &Agrave; 22 h. la fanfare Pourpour distillait une musique
-            empreinte de romantisme qui a captiv é le public du parc
-            Hydro-Qu ébec. Doux, lyriques, parfaitement ex écut és, les airs de
-            valse parfum ée aux effluves slaves avaient de quoi s éduire. En
-            boni, Mara Tremblay s&rsquo; était jointe &agrave; la fanfare. Du
-            bonheur.&raquo;
+            « à 22 h. la fanfare Pourpour distillait une musique
+            empreinte de romantisme qui a captivé le public du parc
+            Hydro-Québec. Doux, lyriques, parfaitement exécutés, les airs de
+            valse parfumée aux effluves slaves avaient de quoi séduire. En
+            boni, Mara Tremblay s' était jointe à la fanfare. Du
+            bonheur.»
           </span>
         </p>
         <p class="c1">
-          <span class="c2">
             &mdash; Philippe Renaud, La Presse, 2001, aux Francofolies de
-            Montr éal.
-          </span>
+            Montréal.
         </p>
         <p class="c1">
           <span class="c0">
@@ -414,11 +401,10 @@ export default function Presse() {
           </span>
         </p>
         <p class="c1">
-          <span class="c2">
             &mdash; Peter Meisenheimer, Guelph Mercury, 2002 au Guelph Jazz
             Festival.
-          </span>
         </p>
+        </Disque>
       </div>
     </StyledPress>
   );
