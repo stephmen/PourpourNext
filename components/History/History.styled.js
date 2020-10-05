@@ -19,6 +19,7 @@ export const Text = styled.p`
 
     .PhotoMilieu{
         height: 100%;
+        width: auto;
         float: left;
         margin: 2rem;
     }

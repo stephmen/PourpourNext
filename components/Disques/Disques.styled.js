@@ -21,7 +21,14 @@ export const StyledDisques = styled.div`
     justify-content: center;
     flex-flow: column;
     padding:3rem;
-    
+    padding-top:1 rem;
+    `
+    export const Boutiques =styled.div`
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding-bottom:3rem;
+
     .Dame{
       max-width: 250px;
       padding: 10px 10px;
@@ -30,19 +37,17 @@ export const StyledDisques = styled.div`
       cursor: pointer;
     }
     .Apple{
-      padding-top: 3rem;
+      /* padding-top: 3rem; */
       max-width: 75px;
+      cursor: pointer;
+    }
+    .Oblique{
+      /* padding-top: 3rem; */
+      max-height: 1000px;
       cursor: pointer;
     }
   `
 
 
-  export const AppleMusic = styled.div`
-    display:none;
-    position: fixed;
-    bottom: 0;
-    height:40rem;
-    width: 40rem;
-    background-color:white;
-    margin-bottom: 25rem;
-  `
+
+  

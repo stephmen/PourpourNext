@@ -27,9 +27,11 @@ const Menu = ({ open, setOpen }) => {
         Presse
         </a>
       </Link>
+      <Link href="/spectacles">
       <a href="/" onClick={() => setOpen(!open)}>
         Spectacles
       </a>
+      </Link>
     </StyledMenu>
   )
 }
