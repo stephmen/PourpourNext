@@ -16,6 +16,7 @@ const PageOne = (props) => {
     return(
     <div >
     <PourPourLogo />
+    <div></div>
     <img className="photo" src="PlacedesArtsPP1.jpg" />
     </div>
     )

@@ -8,20 +8,21 @@ font-size: 8rm;
 
 `
 export const Text = styled.p`
+    
     position: absolute;
-    width: 80%;
+  
     align-content: center; 
-    top: 6rem;
+    /* top: 3rem; */
     margin-bottom: 3rem;
-    left: 10rem;
-    right: 10rem;
-    margin-right:10rem;
+    /* left: 10rem;
+    right: 10rem; */
+    margin:2rem 10rem 10rem 10rem;
 
     .PhotoMilieu{
-        height: 100%;
-        width: auto;
-        float: left;
-        margin: 2rem;
+        float: center;
+        width: 100%;
+        height: auto;
+        
     }
     .PhotoBas{
         float:bottom;

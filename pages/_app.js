@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
     <ThemeProvider theme={theme}>
       <Component {...pageProps} />
       <GlobalStyles />
-      <Header />
+      {/* <Header /> */}
       <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
       <Menu open={open} setOpen={setOpen} id={menuId} />
       <Footer />

@@ -3,7 +3,7 @@ import styled from  'styled-components'
 export const StyledPress = styled.div`
 
 .container{
-    margin: 8rem 28rem;
+    margin: 8rem 8rem;
 }
 .commentaire{
     /* padding-top: 2rem; */
