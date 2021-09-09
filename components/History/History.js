@@ -1,10 +1,10 @@
 import React, { useState, useRef } from "react";
-import { Text, Titre } from "./History.styled.js";
+import { Text, Titre, Main } from "./History.styled.js";
 import { Burger, Menu, HomeLogo } from "../../components";
 
 export default function History() {
   return (
-    <>
+    <Main>
       <Text>
         <Titre>Notre Histoire</Titre>
         Neuf de ses membres sont issus de <b>L'Enfant Fort</b> (1974), libre
@@ -87,6 +87,6 @@ export default function History() {
       
         <img className="PhotoBas" src="Montroyal.jpg"></img>
       </Text>
-    </>
+    </Main>
   );
 }

@@ -13,7 +13,10 @@ export const StyledDisques = styled.div`
   padding-top: 8rem;
   padding-left: 4rem;
   `
-
+  export const Container = styled.div`
+    max-width: 930px;
+    margin: 0 auto;
+    ` 
 
   export const BuyingCD = styled.div`
     display: flex;
@@ -45,6 +48,9 @@ export const StyledDisques = styled.div`
       /* padding-top: 3rem; */
       max-height: 1000px;
       cursor: pointer;
+    }
+    .cd{
+      padding: 10px
     }
   `
 

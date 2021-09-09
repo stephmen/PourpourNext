@@ -2,7 +2,8 @@ import React, { useState, useRef } from "react";
 //import Footer from '../components/Footer'
 import { ThemeProvider } from 'styled-components';
 import { theme } from '.././styles/theme';
-import { Burger, Menu, Footer, Header, HomeLogo, PourPourLogo } from '../components';
+import { PourPourLogo } from '../components';
+import MainPage from '../components/Styled-Component/pageone.styled'
 import { useOnClickOutside } from '../hooks';
 
 const PageOne = (props) => {
@@ -14,11 +15,10 @@ const PageOne = (props) => {
   useOnClickOutside(node, () => setOpen(false));
 
     return(
-    <div >
-    <PourPourLogo />
-    <div></div>
+    <MainPage>
+    <PourPourLogo className="logo" size="75%"/>
     <img className="photo" src="PlacedesArtsPP1.jpg" />
-    </div>
+    </MainPage>
     )
     
 }

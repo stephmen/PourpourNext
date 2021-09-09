@@ -1,41 +1,33 @@
 import styled from 'styled-components';
-export 
-const ShowStyle = styled.div`
-
-
-max-width: 1200px;
-align-items: center;
-max-height: fit-content;
+export const ShowStyle = styled.div`
+width: 960px;
+padding: 4rem;
+margin: auto;
 display: grid;
-grid-template-columns:  100px;
-grid-template-rows:     100px;
-
-
+grid-gap: 20px;
 .title{
-    grid-column-start: 2;
-    grid-row-start: 2;
+    grid-area: 1 / 1 /  3 / 6;
 }
-
+.adress{  
+    flex-direction: column;
+    align-self: end;
+    grid-area: 3 / 1 /  4 / 4;
+}
 img{
-    grid-row-start: 6;
-    grid-column-start: 6;
+    grid-area: 4 / 1 /  4 / 4;
 }
-
-.block{
-    padding-left: 3rem;
-    grid-row-start: 6;
-    grid-column-start: 14;
-    grid-column-end: 20;
-
+.block{   
+    grid-row-start: 4;
+    grid-column-start: 4; 
+    grid-column-end: 7;
 }
-
-.adress{
-    display: flexbox;
-    align-items: flex-end;
-    padding-left: 2rem;
-    align-self: auto;
-    grid-row-start: 2;
-    grid-column-start: 6;
+`
+export const Main = styled.div`
+.main{
+width: 960px;
+padding: 4rem;
+margin: auto;
+display: grid;
+grid-gap: 20px;
 }
-
 `

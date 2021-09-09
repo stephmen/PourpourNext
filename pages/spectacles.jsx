@@ -18,7 +18,7 @@ const Spectacles = (props) => {
   
   return(
     <div >
-    <PourPourLogo size="100"/>
+    <PourPourLogo size="20%"/>
     <Calendar {...props} />
     </div>
     )
@@ -26,6 +26,7 @@ const Spectacles = (props) => {
   }
   
   const client = sanityClient.withConfig({apiVersion: '2021-06-07'})
+  
   Spectacles.getInitialProps = async () => ({
   posts: await client.fetch(groq`
     *[_type == "spectacle"]

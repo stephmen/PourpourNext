@@ -3,7 +3,7 @@ import { GlobalStyles } from '.././global';
 import { ThemeProvider } from 'styled-components';
 import { theme } from '../styles/theme';
 import { useOnClickOutside } from '../hooks'
-import { Burger, Menu, Footer, Header, HomeLogo } from '../components';
+import { Footer, Header } from '../components';
 
 function MyApp({ Component, pageProps }) {
   
@@ -15,11 +15,12 @@ function MyApp({ Component, pageProps }) {
   
   return( 
     <ThemeProvider theme={theme}>
-      <Component {...pageProps} />
       <GlobalStyles />
-      {/* <Header /> */}
-      <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
-      <Menu open={open} setOpen={setOpen} id={menuId} />
+      <Header open="open" />
+      <div>
+        <Component {...pageProps} />
+      </div>
+      
       <Footer />
     </ThemeProvider>
     )

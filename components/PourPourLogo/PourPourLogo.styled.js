@@ -5,17 +5,15 @@ export const PPLogo = styled.div`
 
 background-color: "#b3cad6";
 .logo{
+    /* border: 3px dashed blue; */
+    /* margin: 4rem auto; */
+    width: ${props => props.size ? props.size : "75%"};
+    
 
-display: flex;
-flex-direction: column;
-align-items:baseline;
-justify-content:flex-start;
 height: auto;
-color: ${props => props.color ? props.color : "white"};
-width: 50%;
 @media (min-height:600px) {
-    height: auto;
-    width: 75%;
+
+    width: ${props => props.size ? props.size : "75%"};
 }
 }
 

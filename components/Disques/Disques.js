@@ -4,6 +4,7 @@ import {
   SyledTitle,
   Boutiques,
   BuyingCD,
+  Container,
 } from "./Disques.styled";
 import styled from "styled-components";
 import Link from "next/link";
@@ -12,7 +13,7 @@ const Disques = (props) => {
   const [player, closePlayer] = useState(true);
 
   return (
-    <div>
+    <Container>
       <SyledTitle> Nos Albums</SyledTitle>
       <StyledDisques>
         <img className="cd" src="pourtoutlemondedame.jpg" />
@@ -46,7 +47,7 @@ const Disques = (props) => {
           </Link>
         </div>
       </Boutiques>
-    </div>
+    </Container>
   );
 };
 
