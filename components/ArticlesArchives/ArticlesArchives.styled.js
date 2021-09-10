@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-export const CalendarStyle = styled.div`
+export const ArticlesArchivesStyles = styled.div`
     max-width: 930px;
     margin: 0 auto;
     li {
@@ -49,7 +49,7 @@ li {
 
 .info{
     font-style: italic;
-    grid-area: ;
+    /* grid-area: ; */
 }
   
 

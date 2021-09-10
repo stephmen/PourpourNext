@@ -23,11 +23,11 @@ img{
 }
 `
 export const Main = styled.div`
-.main{
+
 width: 960px;
-padding: 4rem;
+padding: 8rem;
 margin: auto;
 display: grid;
 grid-gap: 20px;
-}
+
 `

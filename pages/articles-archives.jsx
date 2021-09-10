@@ -2,13 +2,11 @@ import React, { useState, useRef } from "react";
 import Link from 'next/link'
 import sanityClient from '../client'
 import groq from 'groq'
-//import Footer from '../components/Footer'
-import { ThemeProvider } from 'styled-components';
-import { theme } from '.././styles/theme';
-import { PourPourLogo, Calendar } from '../components';
+
+import { PourPourLogo, ArticlesArchives } from '../components';
 import { Main } from '../components/Styled-Component/spectacle.styled'
 import { useOnClickOutside } from '../hooks';
-import { Component } from "react";
+
 
 const Spectacles = (props) => {
   const [open, setOpen] = useState(false);
@@ -21,7 +19,7 @@ const Spectacles = (props) => {
   return(
     <Main>
     <PourPourLogo size="60%"/>
-    <Calendar {...props} />
+    <ArticlesArchives {...props} />
     </Main>
     )
     
@@ -31,7 +29,7 @@ const Spectacles = (props) => {
   
   Spectacles.getInitialProps = async () => ({
   posts: await client.fetch(groq`
-    *[_type == "spectacle"]
+    *[_type == "article"]
   `)
 })
 

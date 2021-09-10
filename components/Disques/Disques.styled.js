@@ -4,8 +4,7 @@ export const StyledDisques = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 2rem;
-  top: 10 rem;
+  gap: 20px;
   align-items: center;
 `
   export const SyledTitle = styled.h1`

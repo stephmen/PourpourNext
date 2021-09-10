@@ -23,9 +23,7 @@ const Calendar = (props) => {
       = '' }) =>
       slug && (
         <Link key={_id} href="/spectacles/[slug]" as={`/spectacles/${slug.current}`}>
-        <li key={_id}> {new Date(publishedAt).toLocaleDateString('fr-FR',options)} <br></br><span> {title} </span></li>
-          
-        {/* <li key={_id}> {title} {new Date(_publishedAt).toLocaleDateString('fr-FR',options)}</li> */}
+        <li key={_id}> {new Date(publishedAt).toLocaleDateString('fr-FR',options)} <br/><span> {title} </span></li>   
         </Link>
         ))}
     </div>

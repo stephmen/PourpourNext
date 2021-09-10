@@ -5,7 +5,8 @@ import groq from 'groq'
 //import Footer from '../components/Footer'
 import { ThemeProvider } from 'styled-components';
 import { theme } from '.././styles/theme';
-import { Burger, Menu, Footer, Header, HomeLogo, PourPourLogo, Calendar } from '../components';
+import { PourPourLogo, Calendar } from '../components';
+import { Main } from '../components/Styled-Component/spectacle.styled'
 import { useOnClickOutside } from '../hooks';
 
 const Spectacles = (props) => {
@@ -17,10 +18,12 @@ const Spectacles = (props) => {
   useOnClickOutside(node, () => setOpen(false));
   
   return(
-    <div >
-    <PourPourLogo size="20%"/>
+    <Main >
+    <div className="main">
+    <PourPourLogo size="60%"/>
     <Calendar {...props} />
     </div>
+    </Main>
     )
     
   }
