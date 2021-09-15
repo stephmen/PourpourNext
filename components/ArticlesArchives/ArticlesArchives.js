@@ -18,16 +18,17 @@ const ArticlesArchives = (props) => {
     <h1 className="titre" >Nos projets</h1>
     
     <div className="spectacle">
-    {props.posts.map(
-      ({ _id, title = '', slug = '', publishedAt
-      = '' }) =>
+    {props.articles.map(
+      ({ _id, title = '', slug = '', projet = {}}) =>
       slug && (
         <Link key={_id} href="/archives/[slug]" as={`/archives/${slug.current}`}>
-        <li key={_id}> {new Date(publishedAt).toLocaleDateString('fr-FR',options)} <br></br><span> {title} </span></li>
-          
-        {/* <li key={_id}> {title} {new Date(_publishedAt).toLocaleDateString('fr-FR',options)}</li> */}
+        <li key={_id}> 
+        <br></br><span> {title} </span>
+        <br></br><span> {projet.title} </span>
+        </li>
         </Link>
         ))}
+        
     </div>
     <div className="info">
     </div>
@@ -36,11 +37,7 @@ const ArticlesArchives = (props) => {
     
   }
   
-//   Calendar.getInitialProps = async () => ({
-//   posts: await client.fetch(groq`
-//     *[_type == "post" && publishedAt < now()]
-//   `)
-// })
+
 
 export default ArticlesArchives;
 

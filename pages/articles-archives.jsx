@@ -8,7 +8,7 @@ import { Main } from '../components/Styled-Component/spectacle.styled'
 import { useOnClickOutside } from '../hooks';
 
 
-const Spectacles = (props) => {
+const ArtArch = (props) => {
   const [open, setOpen] = useState(false);
   const node = useRef();
   const menuId = "main-menu";
@@ -27,10 +27,14 @@ const Spectacles = (props) => {
   
   const client = sanityClient.withConfig({apiVersion: '2021-06-07'})
   
-  Spectacles.getInitialProps = async () => ({
-  posts: await client.fetch(groq`
-    *[_type == "article"]
+  ArtArch.getInitialProps = async () => ({
+  articles: await client.fetch(groq`
+    *[_type == "article"]{
+      ...,
+      projet[]->
+    }
   `)
-})
+}
+)
 
-export default Spectacles
+export default ArtArch
