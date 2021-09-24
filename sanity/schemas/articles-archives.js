@@ -1,4 +1,4 @@
-import author from './author'
+// import author from './author'
 import projet from './projet'
 export default {
   name: 'article',
@@ -45,17 +45,29 @@ export default {
       type: 'blockContent',
     },
   ],
+  ordering: [
+    {
+      title: 'Date du Spectacle Récent',
+      name: 'releaseDateDesc',
+      by: [
+        {field: 'publishedAt', direction: 'desc'}
+      ]
+    }
+  ],
 
   preview: {
     select: {
-      title: 'title',
-      author: 'author.name',
       media: 'mainImage',
+      title: 'title',
+      date: 'publishedAt',
     },
-    prepare(selection) {
-      const {author} = selection
+    prepare(selection, viewOptions = {}) {
+      const {date, media,} = selection
+      const title = viewOptions.ordering && viewOptions.ordering.name === 'date'
+    ? `${selection.title} (${selection.publishedAt})`
+    : selection.title
       return Object.assign({}, selection, {
-        subtitle: author && `by ${author}`,
+        subtitle: date && `Date: ${new Date(date).toLocaleDateString('fr-FR')}`,
       })
     },
   },

@@ -84,15 +84,7 @@ export default {
       title: 'title',
       date: 'publishedAt',
     },
-  //   prepare(selection) {
-  //     const {title, date, media, } = selection
-  //     return {
-  //       media,
-  //       title,
-  //       subtitle: new Date(date).toLocaleDateString('fr-FR'),
-  //     }
-  //   }
-  // }
+  
   prepare(selection, viewOptions = {}) {
     const { date, media, } = selection
     const title = viewOptions.ordering && viewOptions.ordering.name === 'publishedAt'

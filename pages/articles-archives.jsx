@@ -30,8 +30,8 @@ const ArtArch = (props) => {
   ArtArch.getInitialProps = async () => ({
   articles: await client.fetch(groq`
     *[_type == "article"]{
-      ...,
-      projet[]->
+      title, publishedAt, _id, slug,
+      projet[]->{title}
     }
   `)
 }
