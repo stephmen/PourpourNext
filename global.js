@@ -13,12 +13,7 @@ export const GlobalStyles = createGlobalStyle`
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
  
-/* .logo{
-padding-top: 3.5rem;
-padding-left: 3rem;
-width: 55%;
-height: 45%;
-} */
+
 
   a {
     color: ${({ theme }) => theme.primaryHover};

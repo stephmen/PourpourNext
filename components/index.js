@@ -10,6 +10,7 @@ export { default as Disques } from './Disques';
 export { default as History } from './History';
 export { default as Calendar } from './Calendar';
 export { default as MainPage } from './PourPourLogo';
+export { default as LesAmis } from './LesAmis';
 export { default as ArticlesArchives } from './ArticlesArchives';
  
 

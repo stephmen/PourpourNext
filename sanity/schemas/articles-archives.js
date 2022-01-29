@@ -45,12 +45,26 @@ export default {
       type: 'blockContent',
     },
   ],
-  ordering: [
+  orderings: [
     {
       title: 'Date du Spectacle Récent',
       name: 'releaseDateDesc',
       by: [
         {field: 'publishedAt', direction: 'desc'}
+      ]
+    },
+    {
+      title: 'Par projet desc',
+      name: 'parprojet',
+      by: [
+        {field: 'projet', direction: 'desc'}
+      ]
+    },
+    {
+      title: 'Par projet desc',
+      name: 'parprojet',
+      by: [
+        {field: 'projet', direction: 'desc'}
       ]
     }
   ],
@@ -58,17 +72,8 @@ export default {
   preview: {
     select: {
       media: 'mainImage',
-      title: 'title',
-      date: 'publishedAt',
+      title: 'projet.0.title',
+      subtitle: 'title',
     },
-    prepare(selection, viewOptions = {}) {
-      const {date, media,} = selection
-      const title = viewOptions.ordering && viewOptions.ordering.name === 'date'
-    ? `${selection.title} (${selection.publishedAt})`
-    : selection.title
-      return Object.assign({}, selection, {
-        subtitle: date && `Date: ${new Date(date).toLocaleDateString('fr-FR')}`,
-      })
-    },
-  },
+  }
 }

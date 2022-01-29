@@ -3,6 +3,7 @@ import React, { useState, useRef } from "react";
 import { ThemeProvider } from 'styled-components';
 import { theme } from '.././styles/theme';
 import { PourPourLogo } from '../components';
+import { LesAmis } from '../components';
 import MainPage from '../components/Styled-Component/pageone.styled'
 import { useOnClickOutside } from '../hooks';
 
@@ -16,7 +17,10 @@ const PageOne = (props) => {
 
     return(
     <MainPage>
-    <PourPourLogo className="logo" size="75%"/>
+    <div className="logoetamis">
+    <PourPourLogo className="logo" size="100%"/>
+    <LesAmis className="lesAmis" size="200%"/>
+    </div>
     <img className="photo" src="PlacedesArtsPP1.jpg" />
     </MainPage>
     )

@@ -3,9 +3,16 @@ import styled from "styled-components";
 
 
 const MainPage = styled.div`
+.logoetamis{
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
 .logo{
-    padding-top: 3rem;
-    margin: auto;
+   
+}
+.lesAmis{
+
 }
 .photo{
 margin-right: 0;

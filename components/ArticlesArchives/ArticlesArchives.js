@@ -47,28 +47,28 @@ const ArticlesArchives = (props) => {
 
   return (
     <ArticlesArchivesStyles>
-      <div className="spectacle">
+      <div className="projets">
         {projectEntries.map((x) => (
-          <div>
-            <li key={x[1]._id}>{x[0]}</li>
-            {/* <br /> */}
-            <div>
-              {x[1].map((element) => (
-                <div>
-                  <Link
-                    key={element._id}
-                    href="/archives/[element.slug.current]"
-                    as={`/archives/${element.slug.current}`}
-                  >
-                    <li key={element._id}>
-                      <span> {element.title} </span>
-                    </li>
-                  </Link>
-                </div>
-              ))}
+          <div className="projet">
+            <div className="projetTitre">
+              <span key={x[1]._id}>{x[0]}</span>
             </div>
-          </div>
+            <div className="article">
+              {x[1].map((element) => (
+                <Link
+                  key={element._id}
+                  href="/archives/[element.slug.current]"
+                  as={`/archives/${element.slug.current}`}
+                >
+                  <li key={element._id}>
+                    <span> {element.title} </span>
+                  </li>
+                </Link>
+              ))}
+              </div>
+            </div>
         ))}
+         <img className="cd" src="lesamistransparent.png" /> 
       </div>
     </ArticlesArchivesStyles>
   );

@@ -60,24 +60,10 @@ export default {
       title: 'Date du Spectacle',
       name: 'releaseDateDesc',
       by: [
-        {field: 'releaseDate', direction: 'desc'}
+        {field: 'releaseDate', direction: 'asc'}
       ]
     }],
-  // preview: {
-  //   select: {
-  //     media: 'mainImage',
-  //     title: 'title',
-  //     date: 'publishedAt',
-  //   },
-  //   prepare(selection) {
-  //     const {title, date, media} = selection
-  //     return {
-  //       media,
-  //       title,
-  //       subtitle: new Date(date).toLocaleDateString('fr-FR'),
-  //     }
-  //   }
-  // }
+ 
   preview: {
     select: {
       media: 'mainImage',

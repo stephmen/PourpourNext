@@ -32,6 +32,11 @@ const Menu = ({ open, setOpen }) => {
         Spectacles
       </a>
       </Link>
+      <Link href="/articles-archives">
+      <a href="/" onClick={() => setOpen(!open)}>
+        Projets/Archives
+      </a>
+      </Link>
     </StyledMenu>
   )
 }
