@@ -2,7 +2,6 @@ import React, { useState, useRef } from "react";
 import Link from 'next/link'
 import sanityClient from '../client'
 import groq from 'groq'
-//import Footer from '../components/Footer'
 import { ThemeProvider } from 'styled-components';
 import { theme } from '.././styles/theme';
 import { PourPourLogo, Calendar } from '../components';

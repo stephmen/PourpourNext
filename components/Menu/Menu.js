@@ -7,6 +7,11 @@ import Link from 'next/link'
 const Menu = ({ open, setOpen }) => {
   return (
     <StyledMenu open={open}>
+      <Link href="/spectacles">
+      <a href="/" onClick={() => setOpen(!open)}>
+        Spectacles
+      </a>
+      </Link>
       <Link href="/disques">
       <a href="/" onClick={() => setOpen(!open)}>
         Disques
@@ -27,16 +32,11 @@ const Menu = ({ open, setOpen }) => {
         Presse
         </a>
       </Link>
-      <Link href="/spectacles">
-      <a href="/" onClick={() => setOpen(!open)}>
-        Spectacles
-      </a>
-      </Link>
-      <Link href="/articles-archives">
+      {/* <Link href="/articles-archives">
       <a href="/" onClick={() => setOpen(!open)}>
         Projets/Archives
       </a>
-      </Link>
+      </Link> */}
     </StyledMenu>
   )
 }

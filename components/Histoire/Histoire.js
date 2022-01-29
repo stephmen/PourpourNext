@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import BlockContent from '@sanity/block-content-to-react'
 import imageUrlBuilder from '@sanity/image-url'
 import sanityClient from '../../client'
+import { Text, Titre, Main } from "./History.styled.js";
 
 
 const client = sanityClient.withConfig({apiVersion: '2021-06-07'})
@@ -22,12 +23,12 @@ const Histoire = (props) => {
   
   return(
    
-    <div className="main">
-    <h1> {title}</h1>
-    <img src={urlFor(props.posts[0].imagesGallery[1]).width(550).url()}/>
+    <Main>
+    <Titre> {props.posts[0].title}</Titre>
+    <img src={urlFor(props.posts[0].imagesGallery[1]).width(850).url()}/>
     <BlockContent blocks={props.posts[0].body}/>
-    <img src={urlFor(props.posts[0].imagesGallery[0]).width(550).url()}/>
-    </div>
+    <img src={urlFor(props.posts[0].imagesGallery[0]).width(850).url()}/>
+    </Main>
     
     )
     
