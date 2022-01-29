@@ -22,7 +22,7 @@ const Menu = ({ open, setOpen }) => {
         Photos
         </a>
         </Link>
-      <Link href="/historique">
+      <Link href="/histoire">
       <a href="/" onClick={() => setOpen(!open)}>
         Histoire
       </a>
