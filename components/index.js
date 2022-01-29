@@ -8,6 +8,7 @@ export { default as PourPourLogo } from './PourPourLogo';
 export { default as Press } from './Press';
 export { default as Disques } from './Disques';
 export { default as History } from './History';
+export { default as Histoire } from './Histoire';
 export { default as Calendar } from './Calendar';
 export { default as MainPage } from './PourPourLogo';
 export { default as LesAmis } from './LesAmis';
