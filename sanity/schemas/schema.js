@@ -4,6 +4,7 @@ import post from './articles-archives'
 import author from './author'
 import projet from './projet'
 import histoire from './histoire'
+import presse from './presse'
 // Then import schema types from any plugins that might expose them
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 
@@ -28,6 +29,8 @@ export default createSchema({
     author,
     projet,
     histoire,
+    presse,
+    
     
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
