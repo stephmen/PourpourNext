@@ -2,8 +2,8 @@ import React, { useState, useRef } from "react";
 //import Footer from '../components/Footer'
 import { ThemeProvider } from 'styled-components';
 import { theme } from '.././styles/theme';
-import { PourPourLogo } from '../components';
-import { LesAmis } from '../components';
+import { PourPourLogo } from '../Components';
+import { LesAmis } from '../Components';
 import MainPage from '../components/Styled-Component/pageone.styled'
 import { useOnClickOutside } from '../hooks';
 
